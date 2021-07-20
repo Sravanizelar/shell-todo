@@ -2,7 +2,7 @@
 source components/common.sh
 
 #Used export instead of service file
-DOMAIN=ksrihari.online
+DOMAIN=thedigitalgifts.com
 
 
 OS_PREREQ
@@ -45,7 +45,7 @@ go build &>>$LOG
 Stat $?
 
 Head "pass the EndPoints in Service File"
-sed -i -e "s/USERS_ENDPOINT/users.ksrihari.online:8080/" systemd.service
+sed -i -e "s/USERS_ENDPOINT/users.thedigitalgifts.com:8080/" systemd.service
 Stat $?
 
 Head "Setup the systemd Service"
