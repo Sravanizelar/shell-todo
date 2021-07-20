@@ -3,7 +3,7 @@
 source components/common.sh
 
 #Used export instead of service file
-DOMAIN=ksrihari.online
+DOMAIN=thedigitalgifts.com
 
 OS_PREREQ
 
@@ -33,7 +33,7 @@ npm install --save-dev  --unsafe-perm node-sass &>>$LOG
 Stat $?
 
 Head "pass the EndPoints in Service File"
-sed -i -e "s/REDIS_ENDPOINT/redis.ksrihari.online/" systemd.service
+sed -i -e "s/REDIS_ENDPOINT/redis.thedigitalgifts.com/" systemd.service
 Stat $?
 
 Head "Setup the systemd Service"
